@@ -1,11 +1,10 @@
-// Raphaela Oliveira Tatto – RM55498
+// Raphaela — RM554983
 package br.com.fiap;
 
 public class Apdex {
 
     /**
-     * Calcula o índice Apdex.
-     * Fórmula: (Satisfeitas + Toleradas/2) / Total
+     * Calcula o índice Apdex: (Satisfeitas + Toleradas/2) / Total
      */
     public static double calcularApdex(int satisfeitas, int toleradas, int total) {
         if (total <= 0) throw new IllegalArgumentException("Total deve ser > 0");
@@ -15,7 +14,7 @@ public class Apdex {
     }
 
     /**
-     * Classifica o valor do Apdex:
+     * Classificação (exemplo usado nas aulas):
      * Excelente: 0.94–1.00
      * Bom:       0.85–0.93
      * Razoável:  0.70–0.84
